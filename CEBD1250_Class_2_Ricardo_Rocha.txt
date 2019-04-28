@@ -1,0 +1,89 @@
+Ricardo Luis da Costa Rocha
+
+Slide 16
+
+List the entities of our database, can you tell the datatypes that we will be
+using? Also, could you tell which are the primary and foreign keys?
+
+The entities of the database employees are:
+
+1) departments
+data types: CHAR, VARCHAR
+primary key: dept_no
+
+2) employees
+data types: INT, DATE, VARCHAR, ENUM
+primary key: emp_no
+
+3) dept_emp
+data types: INT, CHAR, DATE
+primary/foreign keys: dept_no, emp_no
+
+4) salaries
+data types: INT, DATE
+primary key: from_date
+foreign key: emp_no
+
+5) dept_manager
+data types: CHAR, INT, DATE
+primary/foreign keys: dept_no, emp_no
+
+6) titles
+data types: INT, VARCHAR, DATE
+primary keys: title, from_date, to_date
+foreign key: emp_no
+
+
+Slide 23
+
+Apply the 3 rd normal form on the following dataset...
+Answer in the file 3NF_Exercise_Ricardo_Rocha.xlsx
+
+
+Slide 29
+
+In pairs, list the SQL subtypes, defining their purpose (Discussion with Rachel and Sombel based on the following concepts described in https://www.geeksforgeeks.org/sql-ddl-dml-dcl-tcl-commands/
+
+1. DDL(Data Definition Language) : DDL or Data Definition Language actually consists of the SQL commands that can be used to define the database schema. It simply deals with descriptions of the database schema and is used to create and modify the structure of database objects in database. 
+2. DML(Data Manipulation Language) : The SQL commands that deals with the manipulation of data present in database belong to DML or Data Manipulation Language and this includes most of the SQL statements.
+3. DCL(Data Control Language) : DCL includes commands such as GRANT and REVOKE which mainly deals with the rights, permissions and other controls of the database system. 
+4. TCL(transaction Control Language) : TCL commands deals with the transaction within the database. 
+
+Create the tables course, with fields:
+    course_id of type integer,
+    course_name of type varchar2 having the size of 50
+    course_description of type varchar2 having the size of 100.
+
+mysql> CREATE TABLE course ( course_id INT PRIMARY KEY, course_name VARCHAR (50), course_description VARCHAR (100));
+
+Add the field, course_day of type varchar2 of 50.
+
+mysql> ALTER TABLE course ADD course_day VARCHAR (50);
+
+
+Slide 34
+
+Return all salaries that are between 40000 and 60000
+mysql> SELECT * FROM salaries WHERE salary>40000 AND salary<60000;
+1240948 rows in set (1.37 sec)
+
+Get all employees hired after 01-01-1995
+mysql> SELECT * FROM employees WHERE hire_date>'1995-01-01';
+34004 rows in set (0.12 sec)
+
+Get all salaries from 60000 to 90000
+mysql> SELECT * FROM salaries WHERE salary>=60000 AND salary<=90000;
+1261748 rows in set (0.98 sec)
+
+Get all titles where title is equal to engineer
+mysql> SELECT title FROM titles WHERE title REGEXP 'Engineer*' GROUP BY title;
++--------------------+
+| title              |
++--------------------+
+| Senior Engineer    |
+| Engineer           |
+| Assistant Engineer |
++--------------------+
+3 rows in set (0.32 sec)
+
+

@@ -3,7 +3,7 @@ Repository for CEBD1250 course
 
 | Name | Date |
 |:-------|:---------------|
-|Ricardo Rocha| April 13, 2019|
+|Ricardo Rocha|May 05, 2019|
 
 -----
 
@@ -12,6 +12,7 @@ My repository includes the following:
 
 - Python scripts for practices 1 and 2 of Class 1: `Practice_1.py` and `Practice_2.py`
 - File with answers and SQL commands for questions of Class 2: `CEBD1250_Class_2_Ricardo_Rocha.txt` and `3NF_Exercise_Ricardo_Rocha.xslx`
+- File with answers and SQL commands for questions of Class 3: `CEBD1250_Class_3_Ricardo_Rocha.txt` 
 
 ### Class 1 Coding Challenges for Practices 1 and 2
 
@@ -49,3 +50,30 @@ Return all salaries that are between 40000 and 60000
 Get all employees hired after 01-01-1995
 Get all salaries from 60000 to 90000
 Get all titles where title is equal to engineer
+
+### Class 3 Questions about the content of the class 
+Slide 16
+Return all salaries that are between 40000 and 60000
+Select all employees hired after 01-01-1995
+Select all the valid titles names (with to_date = 01-01-9999). Add an extra column written “valid” for the ones with to_date = 01-01-9999, and “not valid” for the ones with
+different to_date values
+Select all titles where title is equal to engineer
+
+Slide 22
+Return the minimum salary of the salary table
+What is the difference between “Having” and “Where” clauses?
+Return the maximum value for date of birth on the employee table
+What is wrong with the following query, re-write it making the needed corrections.
+    SELECT employee.emp_no, AVG(salaries.salary)
+    FROM employee INNER JOIN salaries AT employee.emp_no = salaries.emp_no
+    HAVING AVG(salaries.salary) > 10000
+    GROUP BY employee.emp_no
+
+Slide 27
+What is the difference between a relational data model and a data warehouse?
+Can you tell when to use a data warehouse rather than a normalized database?
+Which are the data warehouse phases?
+Can you list the importance of the staging phase?
+
+Slide 39
+Based on the model below, please define a Multidimensional OLAP model with at least one fact and 4 dimensions

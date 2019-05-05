@@ -1,0 +1,121 @@
+Ricardo Luis da Costa Rocha
+
+
+Slide 16
+
+Return all salaries that are between 40000 and 60000
+mysql> SELECT * FROM salaries WHERE salary>40000 AND salary<60000;
+1240948 rows in set (1.37 sec)
+
+Select all employees hired after 01-01-1995
+mysql> SELECT * FROM employees WHERE hire_date>'1995-01-01';
+34004 rows in set (0.12 sec)
+
+Select all the valid titles names (with to_date = 01-01-9999). Add an extra column written “valid” for the ones with to_date = 01-01-9999, and “not valid” for the ones with
+different to_date values
+mysql> SELECT * FROM titles WHERE to_date = '9999-01-01'; ALTER TABLE titles ADD status VARCHAR(10);
+240124 rows in set (0.20 sec)
+mysql> desc titles;
++-----------+-------------+------+-----+---------+-------+
+| Field     | Type        | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| emp_no    | int(11)     | NO   | PRI | NULL    |       |
+| title     | varchar(50) | NO   | PRI | NULL    |       |
+| from_date | date        | NO   | PRI | NULL    |       |
+| to_date   | date        | YES  |     | NULL    |       |
+| status    | varchar(10) | YES  |     | NULL    |       |
++-----------+-------------+------+-----+---------+-------+
+mysql> UPDATE titles SET status = 'valid' WHERE to_date = '9999-01-01';
+Query OK, 240124 rows affected (23.93 sec)
+Rows matched: 240124  Changed: 240124  Warnings: 0
+
+mysql> UPDATE titles SET status = 'not valid' WHERE to_date != '9999-01-01';
+Query OK, 203184 rows affected (3.95 sec)
+Rows matched: 203184  Changed: 203184  Warnings: 0
+
+Select all titles where title is equal to engineer
+mysql> SELECT title FROM titles WHERE title REGEXP 'Engineer*' GROUP BY title;
++--------------------+
+| title              |
++--------------------+
+| Senior Engineer    |
+| Engineer           |
+| Assistant Engineer |
++--------------------+
+3 rows in set (0.32 sec)
+
+
+Slide 22
+
+Return the minimum salary of the salary table
+mysql> SELECT MIN(salary) FROM salaries;
++-------------+
+| MIN(salary) |
++-------------+
+|       38623 |
++-------------+
+1 row in set (1.14 sec)
+
+What is the difference between “Having” and “Where” clauses?
+The HAVING CLAUSE works in the results of an aggregate operation while a WHERE CLAUSE works directly at the table level.
+
+Return the maximum value for date of birth on the employee table
+mysql> SELECT MAX(birth_date) FROM employees;
++-----------------+
+| MAX(birth_date) |
++-----------------+
+| 1965-02-01      |
++-----------------+
+1 row in set (0.12 sec)
+
+What is wrong with the following query, re-write it making the needed corrections.
+    SELECT employee.emp_no, AVG(salaries.salary)
+    FROM employee INNER JOIN salaries AT employee.emp_no = salaries.emp_no
+    HAVING AVG(salaries.salary) > 10000
+    GROUP BY employee.emp_no
+The order of HAVING CLAUSE and GROUP BY is inverted.
+
+
+Extra Exercises
+
+Write a SQL query to get the third highest salary of an employee from employee_table
+
+Write a SQL that returns the employee name and title for all employees with even number as actual salary (to_date is 9999-01-01)
+
+
+Slide 27
+
+What is the difference between a relational data model and a data warehouse?
+A relational data model explains how your data is storaged while a data warehouse is analytic driven and it represents a business view. 
+
+Can you tell when to use a data warehouse rather than a normalized database?
+A data warehouse is used to solve business analitcs and it allows data reduncy while a normalized database works in eliminating redudancy to optimize resources.
+
+Which are the data warehouse phases?
+1) OLTP PHASE
+2) STAGING PHASE
+3) METADATA PHASE
+4) OLAP PHASE
+5) PRESENTATION PHASE
+
+Can you list the importance of the staging phase?
+The staging phase is important to:
+1) Increase the efficiency of ETL processes
+2) Ensure data integrity
+3) Support data quality operations
+
+Slide 31
+
+Identify the dimensions, attribute and data granularity of the given model
+Dimensions: Store, Time, Product
+Attribute: City, Quarter, Category
+Granularity: Quarter
+Insights
+Which categories of products are the most being sale by cities in a specific quarter of the year?
+
+
+Slide 39
+Based on the model below, please define a Multidimensional OLAP model with at least one fact and 4 dimensions
+Fact: Average time for women to become chef of a department and match men's salary.
+Dimensions: Time, Department, Salary Information, Genre
+

@@ -11,6 +11,7 @@ Repository for CEBD1250 course
 
 My repository includes the following:
 
+- Articles reviews related with the classes subjects: `Articles_Reviews.txt`
 - Python scripts for practices 1 and 2 of Class 1: `Practice_1.py` and `Practice_2.py`
 - File with answers and SQL commands for questions of Class 2: `CEBD1250_Class_2_Ricardo_Rocha.txt` and `3NF_Exercise_Ricardo_Rocha.xslx`
 - File with answers and SQL commands for questions of Class 3: `CEBD1250_Class_3_Ricardo_Rocha.txt` 

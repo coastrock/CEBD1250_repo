@@ -8,11 +8,13 @@ Repository for CEBD1250 course
 -----
 
 ### Resources
+
 My repository includes the following:
 
 - Python scripts for practices 1 and 2 of Class 1: `Practice_1.py` and `Practice_2.py`
 - File with answers and SQL commands for questions of Class 2: `CEBD1250_Class_2_Ricardo_Rocha.txt` and `3NF_Exercise_Ricardo_Rocha.xslx`
 - File with answers and SQL commands for questions of Class 3: `CEBD1250_Class_3_Ricardo_Rocha.txt` 
+- File with answers for questions of Class 4: `CEBD1250_Class_4_Ricardo_Rocha.txt` 
 
 ### Class 1 Coding Challenges for Practices 1 and 2
 
@@ -52,6 +54,7 @@ Get all salaries from 60000 to 90000
 Get all titles where title is equal to engineer
 
 ### Class 3 Questions about the content of the class 
+
 Slide 16
 Return all salaries that are between 40000 and 60000
 Select all employees hired after 01-01-1995
@@ -77,3 +80,23 @@ Can you list the importance of the staging phase?
 
 Slide 39
 Based on the model below, please define a Multidimensional OLAP model with at least one fact and 4 dimensions
+
+### Class 4 Questions about the content of the class 
+
+Slide 17
+Which file structure will be more close to a relational database?
+Is AVRO the same thing as JSON, what is the difference?
+What is the difference between PARQUET and a delimited file type?
+Which kind of compression algorithm allows to consume data using parallel processing?
+
+Slide 21
+
+Define a scenario where ACID properties are needed, enlist 3 reasons why.
+Define a scenario where BASE properties are needed, enlist 3 reasons why.
+
+Slide 28
+Your client wants to find potential clients based on their locations or interests, what would you suggest?
+You need to store the logs from your billing system in a way that they will become easy to access.
+You want to analyze the most accessed site of your e-commerce platform over the time. Where would you store the data?
+You want to store the inventory of your website contents per endpoints. The page contents will be labelled with the page endpoint accessed, for quick access. Which database solution you would choose?
+You have to store financial information about your clients, such as balance account and personal information. Which one you will use?

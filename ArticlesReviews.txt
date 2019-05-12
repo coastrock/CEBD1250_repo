@@ -1,0 +1,7 @@
+Article related with classes 2 and 3:
+
+Available in: https://www.alibabacloud.com/blog/a-comparison-of-data-modeling-methods-for-big-data_593761
+
+I think this is a good article because it pretty much sumarizes everything we saw in classes 2 and 3, it gives us a notion of what to expect when we start working with Big Data solutions in the industry and briefly present us a real case scenario when it introduces Alibaba Cloud’s Big Data modeling practices.
+The author guide us since the beginning from the necessity of Data Modeling, explaining its origin. Next, he makes a comparison of data modelling methods that I think it was precise and fair, even explaining the gains of them.
+In the end, it was good to know the stages of Alibaba's data warehouse modeling and some lessons that they learned as "We came to understand that creating ER models is risky and inappropriate for an immature, rapidly changing company."   

@@ -1,0 +1,39 @@
+Ricardo Luis da Costa Rocha
+
+
+Slide 17
+
+Which file structure will be more close to a relational database?
+CSV, because CSV has columns and roles.
+
+Is AVRO the same thing as JSON, what is the difference?
+No, AVRO has more metadata inside of it containing information about communication protocol and types.
+
+What is the difference between PARQUET and a delimited file type?
+PARQUET is optimized to batch data processing while delimited file type is used on batch data pipelines.
+
+Which kind of compression algorithm allows to consume data using parallel processing?
+Bzip2 because it is splitable. Gzip is more recommended when you need to keep doing updates on your data.
+
+Slide 21
+Define a scenario where ACID properties are needed, enlist 3 reasons why.
+Recovering information of airplanes blackbox. All the information needs to be precise (consistent), no place for errors or lack of information, the recovery doesn't need to be fast.
+
+Define a scenario where BASE properties are needed, enlist 3 reasons why.
+Consuming information from Youtube. It needs to be fast (speed of processing), it accepts data inconsistency and it accepts data loss.
+
+Slide 28
+Your client wants to find potential clients based on their locations or interests, what would you suggest?
+Graph, because this pattern can be used to find the required information through social network queries.
+
+You need to store the logs from your billing system in a way that they will become easy to access.
+Document, because billing information has a natural container structure.
+
+You want to analyze the most accessed site of your e-commerce platform over the time. Where would you store the data?
+Columnar, because of the way to storage the data.
+
+You want to store the inventory of your website contents per endpoints. The page contents will be labelled with the page endpoint accessed, for quick access. Which database solution you would choose?
+Key-value because of the label that will be associated to the data.
+
+You have to store financial information about your clients, such as balance account and personal information. Which one you will use?
+Columnar, because it can storage personal information in populated tables and it could deal with the high variance of finantial information.

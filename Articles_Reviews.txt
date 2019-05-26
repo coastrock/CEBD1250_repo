@@ -1,7 +1,34 @@
-Article related with classes 2 and 3:
+Ricardo Luis da Costa Rocha
+
+Article related to classes 2 and 3:
 
 Available in: https://www.alibabacloud.com/blog/a-comparison-of-data-modeling-methods-for-big-data_593761
 
 I think this is a good article because it pretty much summarizes everything we saw in classes 2 and 3, it gives us a notion of what to expect when we start working with Big Data solutions in the industry and briefly present us a real case scenario when it introduces Alibaba Cloud’s Big Data modeling practices.
 The author guides us since the beginning from the necessity of Data Modeling, explaining its origin. Next, he makes a comparison of data modeling methods that I think it was precise and fair, even explaining the gains of them.
 In the end, it was good to know the stages of Alibaba's data warehouse modeling and some lessons that they learned as "We came to understand that creating ER models is risky and inappropriate for an immature, rapidly changing company."
+
+
+Article related to class 3:
+
+Available in: https://medium.com/readwrite/data-lake-vs-data-warehouse-which-is-the-best-data-architecture-ebda7192f99f
+
+Despite being an almost 1-year article, I think the author explains very clearly the differences between data warehouse and data lake. In my opinion, the applications for both technologies are well characterized and the limitations regarding their implementations as well. At the end of the article, the author stresses the applications of data warehouses and data lakes affirming that "These systems aren’t mutually exclusive, either" that means we can even design a hybrid solution if necessary.
+
+
+Article related to class 4:
+
+Available in: https://neo4j.com/developer/graph-db-vs-nosql/
+
+I chose this article because it explains in a simple way the concepts of graph databases. It relates NoSQL knowledge to Graphs concepts and helps us to understand the differences between them. The author compares the graph data model to other NoSQL models. And more, he explains us how to translate Key-Value as a Graph and Document as a Graph. There is also a videos series clarifying the database concepts.
+
+
+Article related to class 5:
+
+Available in: https://towardsdatascience.com/becoming-a-level-3-0-data-scientist-52641ff73cb3
+
+I chose this article because I had a pre-conceived idea about the term Data Scientist and as we had a discussion about this profession these days I wondered if there was some article about it. Firstly, my idea of data scientist comes from the term Data Science in an academic vision. I thought that such a term should mean a new science in the sense of a new field that is created because of the modern world. A data scientist should be, in my opinion, some professional that studies, develops experiments and work in the evolution of data structures, types, processes, etc. But now I understand that there is a merge, fusion or convergence between the academy, the professional and business understandings that puts the concept of the data scientist in a more generic place. That said, the author tries to clarify the data scientist label. This categorization considers only the data scientists role. He explains that there are different levels of data scientists depending on their tasks in the data science team: Junior (1.0), Senior (2.0), or Principal (3.0). Regarding our Big Data storage course, the principal data scientist needs to have impeccable engineering skills! That means the data engineering skills are essential to the carrier that I chose to follow.
+
+
+
+

@@ -1,0 +1,49 @@
+Ricardo Luis da Costa Rocha
+
+
+Slide 12
+Why CRISP-DM is necessary?
+It provides a path to transform the business understandings of a problem into a deployed solution.
+
+A company is using OCR (Optical Character Recognition) to be able to store into a database their physical documents inventory. The focus is to have data integrity, even if
+it costs to not be available all the time. Please inform which CAP subdomain and technology it could be choose.
+CP with some Document database
+
+A company needs to store all the analytical interaction data of an e-commerce platform. Due the to process the data on a streaming mode, the system needs to be available all
+the time even if it costs the data consistency. Please inform which CAP subdomain and technology it could be choose.
+AP with Cassandra
+
+You was called to create an MDM (Master Data Management) platform to be used on fraud cases. This data will be used as referential data to cross validate with the clients
+interactions. It needs to be consistent and available. Please inform which CAP subdomain and technology it could be choose.
+CA with MySQL
+
+Give extra examples of business problems for each of CAP subdomains
+CA: The STM must make bus schedules available as a reference for passengers on its website.
+AP: An e-commerce store needs to guarantee the visualization and the addition/remotion of items in shopping carts for its customers during their purchases operations.
+CP: An university departament website needs to disponibilize information and eletronic formularies and receive candidates applications for masters and doctorates studies.
+
+
+Slide 19
+Problem 1
+Servers generate a large number of events (i.e. logging,) that contain useful information about their operation including errors, warnings, and users behaviour. Choose a solution to store this data focusing on the optimal data retrieval.
+CAP: AP
+Type of technology: Cassandra
+Storage: SSD
+Temperature: Warm Data
+
+Slide 20
+Problem 2
+In today’s world, a variation of content is available for the users for ingesting. Also, the variation of application clients, such as a browser, mobile, and so on, where
+each client needs the same content in different formats. Users not only munch content but also produce a variety of content in a huge volume with a high speed, such as tweets, Facebook posts, images, blogging, and much more. Propose a solution focusing on time series analytics on massive amount of data.
+CAP: AP
+Type of technology: MongoDB
+Storage: SSD or HD, depending on the time series analytics and the money availability
+Temperature: Warm or Cold
+
+Slide 21
+Problem 3
+Your data scientist is doing a semantic analysis based on entity extraction process (a type of natural language processing or NLP) that can be combined with other tools to extract simple facts or assertions made within a document. For having a better performance on its models, you were asked to define the storage solution focused on optimal data retrieval.
+CAP: AP
+Type of technology: A splited solution: Neo4J for the semantic storage and Cassandra for the document storage
+Storage: RAM and SSD, because of the semantic analysis that demands the models running while storagins
+Temperature: Hot and Warm

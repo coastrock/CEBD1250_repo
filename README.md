@@ -91,7 +91,6 @@ What is the difference between PARQUET and a delimited file type?
 Which kind of compression algorithm allows to consume data using parallel processing?
 
 Slide 21
-
 Define a scenario where ACID properties are needed, enlist 3 reasons why.
 Define a scenario where BASE properties are needed, enlist 3 reasons why.
 
@@ -101,3 +100,28 @@ You need to store the logs from your billing system in a way that they will beco
 You want to analyze the most accessed site of your e-commerce platform over the time. Where would you store the data?
 You want to store the inventory of your website contents per endpoints. The page contents will be labelled with the page endpoint accessed, for quick access. Which database solution you would choose?
 You have to store financial information about your clients, such as balance account and personal information. Which one you will use?
+
+### Class 5 Questions about the content of the class 
+
+Slide 12
+Why CRISP-DM is necessary?
+A company is using OCR (Optical Character Recognition) to be able to store into a database their physical documents inventory. The focus is to have data integrity, even if
+it costs to not be available all the time. Please inform which CAP subdomain and technology it could be choose.
+A company needs to store all the analytical interaction data of an e-commerce platform. Due the to process the data on a streaming mode, the system needs to be available all
+the time even if it costs the data consistency. Please inform which CAP subdomain and technology it could be choose.
+You was called to create an MDM (Master Data Management) platform to be used on fraud cases. This data will be used as referential data to cross validate with the clients
+interactions. It needs to be consistent and available. Please inform which CAP subdomain and technology it could be choose.
+Give extra examples of business problems for each of CAP subdomains
+
+Slide 19
+Problem1
+Servers generate a large number of events (i.e. logging,) that contain useful information about their operation including errors, warnings, and users behaviour. Choose a solution to store this data focusing on the optimal data retrieval.
+
+Slide 20
+Problem 2
+In today’s world, a variation of content is available for the users for ingesting. Also, the variation of application clients, such as a browser, mobile, and so on, where each client needs the same content in different formats. Users not only munch content but also produce a variety of content in a huge volume with a high speed, such as tweets, Facebook posts, images, blogging, and much more. Propose a solution focusing on time series analytics on massive amount of data.
+
+Slide 21
+Problem 3
+Your data scientist is doing a semantic analysis based on entity extraction process (a type of natural language processing or NLP) that can be combined with other tools to extract simple facts or assertions made within a document. For having a better performance on its models, you were asked to define the storage solution focused on optimal
+data retrieval.
